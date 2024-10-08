@@ -13,7 +13,7 @@ import { AppRoutingModule } from "./app-routing.module";
     AppRoutingModule,
     HttpClientModule,
     SharedModule.forRoot(),
-    AuthModule.forRoot(),
+  //  AuthModule.forRoot(),
   ],
   providers: [
     httpInterceptorProviders,
