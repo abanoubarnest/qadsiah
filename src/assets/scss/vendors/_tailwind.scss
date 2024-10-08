@@ -1,0 +1,14 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+    --primary-500: #0c111d;
+    --primary-900: #03050a;
+  }
+
+  html {
+    font-family: "Inter";
+  }
+}

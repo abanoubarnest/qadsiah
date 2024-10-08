@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@font-face {
+  font-family: "Inter";
+  src:
+    url("/assets/fonts/Inter/Inter-Black.ttf") format("tff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src:
+    url("/assets/fonts/Inter/Inter-ExtraBold.ttf") format("tff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src:
+    url("/assets/fonts/Inter/Inter-Bold.ttf") format("tff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src:
+    url("/assets/fonts/Inter/Inter-Bold.ttf") format("tff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter/Inter-SemiBold.ttf") format("tff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter/Inter-Medium.ttf") format("tff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter/Inter-Regular.ttf") format("tff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter/Inter-Light.ttf") format("tff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src:
+    url("/assets/fonts/Inter/Inter-ExtraLight.ttf") format("tff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src:
+    url("/assets/fonts/Inter/Inter-Thin.ttf") format("tff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter/Inter-Regular.ttf") format("tff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+* {
+  font-family: "Inter";
+  box-sizing: border-box;
+}

@@ -1,0 +1,102 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material'as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+
+// http: //mcg.mbitson.com
+$primary-pallette: (50 : #e2e2e4,
+  100 : #b6b8bb,
+  200 : #86888e,
+  300 : #555861,
+  400 : #30353f,
+  500 : #0c111d,
+  600 : #0a0f1a,
+  700 : #080c15,
+  800 : #060a11,
+  900 : #03050a,
+  A100 : #4f95ff,
+  A200 : #1c77ff,
+  A400 : #005de8,
+  A700 : #0053ce,
+  contrast: (50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  ));
+
+$accent-pallette: (50 : #eafef4,
+  100 : #cafce5,
+  200 : #a6fad3,
+  300 : #82f7c1,
+  400 : #68f6b4,
+  500 : #4df4a7,
+  600 : #46f39f,
+  700 : #3df196,
+  800 : #34ef8c,
+  900 : #25ec7c,
+  A100 : #ffffff,
+  A200 : #f3fff8,
+  A400 : #c0ffda,
+  A700 : #a7ffcb,
+  contrast: (50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  ),
+);
+
+$b5-kit-primary: mat.define-palette($primary-pallette);
+$b5-kit-accent: mat.define-palette($accent-pallette);
+
+// The warn palette is optional (defaults to red).
+$b5-kit-warn: mat.define-palette(mat.$red-palette);
+// Set the default typography
+@include mat.all-component-typographies(mat.define-typography-config($font-family: 'Inter'));
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$b5-kit-theme: mat.define-light-theme((color: (primary: $b5-kit-primary,
+      accent: $b5-kit-accent,
+      warn: $b5-kit-warn,
+    ),
+    typography: mat.define-typography-config($font-family: 'Inter',
+    ),
+  ));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($b5-kit-theme);
+
+body {
+  box-sizing: border-box;
+  @apply bg-primary-500 text-neutral-500;
+}

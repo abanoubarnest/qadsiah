@@ -1,0 +1,24 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+
+// scroll bar styles
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-neutral-200;
+  border-radius: 13px;
+}
+::-webkit-scrollbar-thumb {
+  opacity: 0.5;
+  border-radius: 13px;
+  @apply bg-neutral-300;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 40rem #ffff inset;
+}

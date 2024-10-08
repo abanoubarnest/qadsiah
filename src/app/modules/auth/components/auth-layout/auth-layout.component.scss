@@ -1,0 +1,21 @@
+.auth-layout {
+  &__text-container {
+    padding-inline-start: 4.75rem;
+    padding-inline-end: 7.88rem;
+    padding-bottom: 3.94rem;
+  }
+
+  &__content {
+
+
+    &-img {
+      // height: calc(100vh - 8rem);
+
+      .logo {
+        width: 11.75rem;
+        height: 1.25rem;
+        // margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
